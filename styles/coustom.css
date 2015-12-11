@@ -1,0 +1,501 @@
+.char-bg{
+	width: 500px;
+	height: 500px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+
+	padding:2%;
+	text-align:center;
+}
+
+.acce-bg{
+	width: 100px;
+	height: 100px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	background-color: #ffecf4;
+	border: solid 1px #80aab0;
+	background-image: -webkit-radial-gradient(#fff, #d7faff 80%);
+	background-image: -moz-radial-gradient(#fff, #d7faff 80%);
+	background-image: -o-radial-gradient(#fff, #d7faff 80%);
+	background-image: -ms-radial-gradient(#fff, #d7faff 80%);
+	background-image: radial-gradient(to #fff, #d7faff 80%);
+	padding:2%;
+	text-align:center;
+	position:relative;
+	z-index:1;
+}
+.personality{
+	position:absolute;
+	left:0%;
+	
+}
+.driver{
+	position:absolute;
+	float: left;
+	top: 75%;
+}
+.helmet{
+	position:absolute;
+	left: 75%;
+	float: left;
+	top: 75%;
+}
+.gloves{
+	position:absolute;
+	left: 90%;
+	float: left;
+	top: 40%;
+	
+}
+.shoe{
+	position:absolute;
+	left: 80%;
+	float: left;
+	
+}
+
+.label-text-l{
+	position:relative;
+	left:-120%;
+	top:30%;
+	font-weight:500;
+}
+.label-text-r{
+	position:relative;
+	left:120%;
+	top:30%;
+	font-weight:500;
+}
+
+.char{
+	height:450px;
+}
+.hair-thumb{
+	position:relative;
+	top:-16%;
+	left:12%;
+}
+.drive-thumb{ 
+	position:relative;
+	top:-33%;
+	left:6%;
+}
+.helmet-thumb{ 
+	position:relative;
+	top:-28%;
+	left:6%;
+}
+.glove-thumb{ 
+	position:relative;
+	top:-10%;
+	left:1%;
+}
+.shoes-thumb{ 
+	position:relative;
+	top:10%;
+	left:-37%;
+}
+.locked_hair{
+	background-image:url(../images/icon_lock.png);
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:32px 32px;
+	position:relative;
+	min-width:32px;
+	min-height:32px;
+	top: -127%;
+	left: 20%;
+}
+.locked_driving{
+	background-image:url(../images/icon_lock.png);
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:32px 32px;
+	position:relative;
+	min-width:32px;
+	min-height:32px;
+	top: -68%;
+	left: 50%;
+}
+.locked_helmet{
+	background-image:url(../images/icon_lock.png);
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:32px 32px;
+	position:relative;
+	min-width:32px;
+	min-height:32px;
+	top: -68%;
+	left: 50%;
+}
+.locked_gloves{
+	background-image:url(../images/icon_lock.png);
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:32px 32px;
+	position:relative;
+	min-width:32px;
+	min-height:32px;
+	top: -7%;
+	left: 00%;
+}
+
+.locked_shoes{
+	background-image:url(../images/icon_lock.png);
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:32px 32px;
+	position:relative;
+	min-width:32px;
+	min-height:32px;
+	top: -86%;
+	left: -50%;
+}
+
+
+.unlocked_hair{
+	background-image:url(../images/icon_unlock.png);
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:32px 32px;
+	position:relative;
+	min-width:32px;
+	min-height:32px;
+	top: -127%;
+	left: 20%;
+}
+.unlocked_driving{
+	background-image:url(../images/icon_unlock.png);
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:32px 32px;
+	position:relative;
+	min-width:32px;
+	min-height:32px;
+	top: -68%;
+	left: 50%;
+}
+.unlocked_helmet{
+	background-image:url(../images/icon_unlock.png);
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:32px 32px;
+	position:relative;
+	min-width:32px;
+	min-height:32px;
+	top: -68%;
+	left: 50%;
+}
+.unlocked_gloves{
+	background-image:url(../images/icon_unlock.png);
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:32px 32px;
+	position:relative;
+	min-width:32px;
+	min-height:32px;
+	top: -7%;
+	left: 00%;
+}
+
+.unlocked_shoes{
+	background-image:url(../images/icon_unlock.png);
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:32px 32px;
+	position:relative;
+	min-width:32px;
+	min-height:32px;
+	top: -86%;
+	left: -50%;
+}
+.editor {
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(128, 170, 176);
+  background-image: -moz-radial-gradient( 50% 50%, circle closest-side, rgb(255,255,255) 33%, rgb(235,253,255) 73%, rgb(215,250,255) 100%);
+  background-image: -webkit-radial-gradient( 50% 50%, circle closest-side, rgb(255,255,255) 33%, rgb(235,253,255) 73%, rgb(215,250,255) 100%);
+  background-image: -ms-radial-gradient( 50% 50%, circle closest-side, rgb(255,255,255) 33%, rgb(235,253,255) 73%, rgb(215,250,255) 100%);
+  box-shadow: 1px 1.732px 5px 0px rgba(0, 0, 0, 0.54);
+  border-radius:2px;
+  position:absolute;
+  left:-60%;
+  z-index:1000;
+}
+.editorStrip {
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(128, 170, 176);
+  border-radius: 3px;
+  background-color: rgb(255, 255, 255);
+  width:98%;
+  margin-left:1%;
+  z-index:
+}
+.no-padding{
+	padding:0px;
+}
+.no-margin{
+	margin:0px;
+}
+.colors{
+	padding-top:5px;
+}
+.color_1 {
+  background-color:#e4327e;
+  width: 20px;
+  height: 20px;
+  margin-bottom:10px;
+}
+.color_2 {
+  background-color:#fb5544;
+  width: 20px;
+  height: 20px;
+  margin-bottom:10px;
+}
+.color_3 {
+  background-color:#f5bd42;
+  width: 20px;
+  height: 20px;
+  margin-bottom:10px;
+}
+.color_4 {
+  background-color:#b7cc94;
+  width: 20px;
+  height: 20px;
+  margin-bottom:10px;
+}
+.color_5 {
+  background-color:#dba04a;
+  width: 20px;
+  height: 20px;
+  margin-bottom:10px;
+}
+.color_6 {
+  background-color:#ff8eac;
+  width: 20px;
+  height: 20px;
+  margin-bottom:10px;
+}
+.color_7 {
+  background-color:#966eac;
+  width: 20px;
+  height: 20px;
+  margin-bottom:10px;
+}
+.color_8 {
+  background-color:#7bcbc0;
+  width: 20px;
+  height: 20px;
+  margin-bottom:10px;
+}
+.holder{
+	background-color:#fff;
+	padding-bottom:5%;
+	padding-top:10px;
+}
+.border_b{
+	border-bottom: solid 1px #CCC;
+}
+
+/** popup**/
+
+div.callout {
+	height: auto;
+	width: 300px;
+	float: left;
+	text-wrap:normal;
+
+}
+
+div.callout {
+	background-color: #f06492;
+	position: relative;
+	color: #fff;
+	padding: 10px;
+	border-radius: 2px;
+	box-shadow: 0px 0px 20px #999;
+	margin: 25px;
+	min-height: 50px;
+	border: 3px solid #00c7e4;
+	
+	/*box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset;*/
+}
+
+div.callout-unlocked {
+	background-color: #00c7e4;
+	position: relative;
+	color: #fff;
+	padding: 10px;
+	border-radius: 2px;
+	box-shadow: 0px 0px 20px #999;
+	margin: 25px;
+	min-height: 50px;
+	border: 3px solid #00c7e4;
+	
+	/*box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset;*/
+}
+
+.callout::before {
+	content: "";
+	width: 0px;
+	height: 0px;
+	border: 0.8em solid transparent;
+	position: absolute;
+}
+
+.callout.right::before {
+	left: -23px;
+	top: 40%;
+	border-right: 10px solid #00c7e4;
+}
+
+.callout.right-top::before {
+	left: -23px;
+	top: 10%;
+	border-right: 10px solid #00c7e4;
+}
+
+.callout.left::before {
+	right: -23px;
+	top: 40%;
+	border-left: 10px solid #00c7e4;
+}
+
+.callout.left-top::before {
+	right: -23px;
+	top: 10%;
+	border-left: 10px solid #00c7e4;
+}
+
+.callout.bottom::before {
+	left: 5%;
+	top: -23px;
+	border-bottom: 10px solid #00c7e4;
+}
+
+.callout.bottom-right::before {
+	left: 85%;
+	top: -23px;
+	border-bottom: 10px solid #00c7e4;
+}
+
+.callout.top::before {
+	left: 5%;
+	bottom: -23px;
+	border-top: 10px solid #00c7e4;
+}
+
+.callout.top-right::before {
+	left: 85%;
+	bottom: -23px;
+	border-top: 10px solid #00c7e4;
+}
+
+.pers-popup{
+	position: absolute !important;
+	right: 90%;
+	float: left !important;
+	top: 42%;
+}
+.shoe-popup{
+	position: absolute !important;
+	left: 100%;
+	float: left !important;
+	top: -19%;
+}
+.gloves-popup{
+	position: absolute !important;
+	left: 90%;
+	float: left !important;
+	top: 38%;
+}
+.helmet-popup{
+	position: absolute !important;
+	left: 0%;
+	float: left !important;
+	top: 95%;
+}
+.driving-popup{
+	position: absolute !important;
+	right: -10%;
+	float: left !important;
+	top: 95%;
+}
+
+@media screen and (max-width:1280px){
+	div.callout {
+	width: 235px;
+
+}
+
+}
+
+/* FeMale Personlaity */
+
+.eyeFemale{
+	background-image:url(../images/eye.png);
+	width:60px;
+	height:60px;
+}
+.eyeFemaleSpecks{
+	background-image:url(../images/eye2.png);
+	width:60px;
+	height:60px;
+}
+.hairFemaleShort{
+	background-image:url(../images/hair.png);
+	width:60px;
+	height:60px;
+}
+.hairFemaleLong{
+	background-image:url(../images/hair2.png);
+	width:60px;
+	height:60px;
+}
+.shirtFemale{
+	background-image:url(../images/shirt.png);
+	width:60px;
+	height:60px;
+}
+.pantFemale{
+	background-image:url(../images/pant.png);
+	width:60px;
+	height:60px;
+}
+
+/* Male Personlaity */
+
+.eyeMale{
+	background-image:url(../images/eye_boy.png);
+	width:60px;
+	height:60px;
+}
+.eyeMaleSpecks{
+	background-image:url(../images/eye_boy2.png);
+	width:60px;
+	height:60px;
+}
+.hairMaleShort{
+	background-image:url(../images/boy_shortHair.png);
+	width:60px;
+	height:60px;
+}
+.hairMaleLong{
+	background-image:url(../images/boy_longHair.png);
+	width:60px;
+	height:60px;
+}
+.shirtMale{
+	background-image:url(../images/shirt_boy.png);
+	width:60px;
+	height:60px;
+}
+.pantMale{
+	background-image:url(../images/pant_boy.png);
+	width:60px;
+	height:60px;
+}

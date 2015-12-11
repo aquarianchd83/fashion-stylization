@@ -1,0 +1,341 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Game</title>
+    <link rel="stylesheet" href="styles/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles/coustom.css" />
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12 col-lg-offse-1 col-md-offset-1 holder">
+            <h3 class="text-center">
+            <b>    Fashion Stylization Of Girl</b>
+            </h3>
+            <div class="col-lg-6 col-md-6 col-md-offset-3 char-bg">
+                <div class="editor col-lg-7 col-md-7">
+                    <h4 class="text-left">
+                        Hair Selection</h4>
+                    <div class="row editorStrip">
+                        <a id="hairStyle1">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                <div class="hairMaleShort" id="divHairSelectionHairShort" onclick="ChangeHairStyle(false,true)">
+                                </div>
+                            </div>
+                        </a><a id="hairStyle2">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                <div class="hairMaleLong" id="divHairSelectionHairLong" onclick="ChangeHairStyle(true,false)">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <br />
+                    <h4 class="text-left">
+                        Appearance</h4>
+                    <div class="row editorStrip">
+                        <a id="appearance1">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                <div class="eyeMale" id="divAppearance1Eye" onclick="ShowSpec(false);">
+                                </div>
+                            </div>
+                        </a><a id="appearance2">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                <div class="eyeMaleSpecks" id="divAppearance2Eye" onclick="ShowSpec(true);">
+                                </div>
+                            </div>
+                        </a><a id="a1">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="bottom: 4px">
+                                <img class="img-responsive drive-thumb" src="images/suit.png" onclick="ShowSuit();" />
+                            </div>
+                        </a><a id="a2">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="top: 8px !important; left: -22px !important"
+                                onclick="ShowShoes();">
+                                <img class="img-responsive drive-thumb" src="images/shoes.png" />
+                            </div>
+                        </a>
+                    </div>
+                    <br />
+                    <h4 class="text-left">
+                        Apparel Colors</h4>
+                    <div class="row editorStrip">
+                        <br />
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 pull-left">
+                                <div class="shirtMale" id="divApparelColorShirt">
+                                </div>
+                            </div>
+                            <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7 colors">
+                                <div class="row">
+                                    <a id="color_1" class="col-lg-3 col-md-3">
+                                        <div class="color_1">
+                                        </div>
+                                    </a><a id="color_2" class="col-lg-3 col-md-3">
+                                        <div class="color_2">
+                                        </div>
+                                    </a><a id="color_3" class="col-lg-3 col-md-3">
+                                        <div class="color_3">
+                                        </div>
+                                    </a><a id="color_4" class="col-lg-3 col-md-3">
+                                        <div class="color_4">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="row">
+                                    <a id="color_5" class="col-lg-3 col-md-3">
+                                        <div class="color_5">
+                                        </div>
+                                    </a><a id="color_6" class="col-lg-3 col-md-3">
+                                        <div class="color_6">
+                                        </div>
+                                    </a><a id="color_7" class="col-lg-3 col-md-3">
+                                        <div class="color_7">
+                                        </div>
+                                    </a><a id="color_8" class="col-lg-3 col-md-3">
+                                        <div class="color_8">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 pull-left">
+                                <div class="pantMale" id="divApparelColorPant">
+                                </div>
+                            </div>
+                            <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7 colors">
+                                <div class="row">
+                                    <a id="color_9" class="col-lg-3 col-md-3">
+                                        <div class="color_1">
+                                        </div>
+                                    </a><a id="color_10" class="col-lg-3 col-md-3">
+                                        <div class="color_2">
+                                        </div>
+                                    </a><a id="color_11" class="col-lg-3 col-md-3">
+                                        <div class="color_3">
+                                        </div>
+                                    </a><a id="color_12" class="col-lg-3 col-md-3">
+                                        <div class="color_4">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="row">
+                                    <a id="color_13" class="col-lg-3 col-md-3">
+                                        <div class="color_5">
+                                        </div>
+                                    </a><a id="color_14" class="col-lg-3 col-md-3">
+                                        <div class="color_6">
+                                        </div>
+                                    </a><a id="color_15" class="col-lg-3 col-md-3">
+                                        <div class="color_7">
+                                        </div>
+                                    </a><a id="color_16" class="col-lg-3 col-md-3">
+                                        <div class="color_8">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+                </div>
+                <object class="char" id="char" type="image/svg+xml" data="svg/main.svg">
+                </object>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            UnLockComponent('jorden', 1500, 1500, 1, 'female');
+        });
+
+        var longHair, shortHair, shoes, helmet, drivingSuit, drivingLight, shirt, shoesDark, burkhaDark, shoesLight, helmetLight, shoesLigshirt, burkhaLight, pant, arm, neck, specs, drivingDark, message, slabDifference;
+
+
+        function ChangeHairStyle(long, short) {
+            if (long) {
+
+                if (longHair.style.visibility == "visible")
+                    longHair.style.visibility = "hidden";
+                else
+                    longHair.style.visibility = "visible";
+                
+                shortHair.style.visibility = "hidden";
+            }
+            else {
+                if (shortHair.style.visibility == "visible")
+                    shortHair.style.visibility = "hidden";
+                else
+                    shortHair.style.visibility = "visible";
+
+                longHair.style.visibility = "hidden";
+            }
+        }
+
+        function ShowSpec(display) {
+            if (display) {
+                specs.style.visibility = "visible";
+            }
+            else {
+                specs.style.visibility = "hidden";
+
+            }
+        }
+
+        function ShowShoes() {
+
+            if (shoes.style.visibility == "visible")
+                shoes.style.visibility = "hidden";
+            else
+                shoes.style.visibility = "visible";
+        }
+
+        function ShowSuit() {
+
+            if (drivingSuit.style.visibility == "visible")
+                drivingSuit.style.visibility = "hidden";
+            else
+                drivingSuit.style.visibility = "visible";
+        }
+
+        function UnLockComponent(loc, highestLevelEndPoint, score, nbaExpectedPoints, gender) {
+
+            var svgDoc = null;
+
+            if (gender == "female") {
+                $("#divHair").removeClass("hairMaleShort").addClass("hairFemaleShort");
+                $("#divHairSelectionHairShort").removeClass("hairMaleShort").addClass("hairFemaleShort");
+                $("#divHairSelectionHairLong").removeClass("hairMaleLong").addClass("hairFemaleLong");
+                $("#divAppearance1Eye").removeClass("eyeMale").addClass("eyeFemale");
+                $("#divAppearance2Eye").removeClass("eyeMaleSpecks").addClass("eyeFemaleSpecks");
+                $("#divApparelColorShirt").removeClass("shirtMale").addClass("shirtFemale");
+                $("#divApparelColorPant").removeClass("pantMale").addClass("pantFemale");
+            }
+
+            var char = document.getElementById("char");
+
+            //Acces btns
+            var coustomHair = document.getElementById("coustomHair");
+            var coustomDriving = document.getElementById("coustomDriving");
+            var coustomHelmet = document.getElementById("coustomHelmet");
+            var coustomGloves = document.getElementById("coustomGloves");
+            var coustomShoes = document.getElementById("coustomShoes");
+            
+            //Coustomizers
+            var hairStyle1 = document.getElementById("hairStyle1");
+            var hairStyle2 = document.getElementById("hairStyle2");
+
+            //Color btns
+            var color_1 = document.getElementById("color_1");
+            var color_2 = document.getElementById("color_2");
+            var color_3 = document.getElementById("color_3");
+            var color_4 = document.getElementById("color_4");
+            var color_5 = document.getElementById("color_5");
+            var color_6 = document.getElementById("color_6");
+            var color_7 = document.getElementById("color_7");
+            var color_8 = document.getElementById("color_8");
+            var color_9 = document.getElementById("color_9");
+            var color_10 = document.getElementById("color_10");
+            var color_11 = document.getElementById("color_11");
+            var color_12 = document.getElementById("color_12");
+            var color_13 = document.getElementById("color_13");
+            var color_14 = document.getElementById("color_14");
+            var color_15 = document.getElementById("color_15");
+            var color_16 = document.getElementById("color_16");
+
+            color_1.onclick = function () { ChangeShirtColor("#e4327e") };
+            color_2.onclick = function () { ChangeShirtColor("#fb5544") };
+            color_3.onclick = function () { ChangeShirtColor("#f5bd42") };
+            color_4.onclick = function () { ChangeShirtColor("#b7cc94") };
+            color_5.onclick = function () { ChangeShirtColor("#dba04a") };
+            color_6.onclick = function () { ChangeShirtColor("#ff8eac") };
+            color_7.onclick = function () { ChangeShirtColor("#966eac") };
+            color_8.onclick = function () { ChangeShirtColor("#7bcbc0") };
+            color_9.onclick = function () { ChangePantColor("#e4327e") };
+            color_10.onclick = function () { ChangePantColor("#fb5544") };
+            color_11.onclick = function () { ChangePantColor("#f5bd42") };
+            color_12.onclick = function () { ChangePantColor("#b7cc94") };
+            color_13.onclick = function () { ChangePantColor("#dba04a") };
+            color_14.onclick = function () { ChangePantColor("#ff8eac") };
+            color_15.onclick = function () { ChangePantColor("#966eac") };
+            color_16.onclick = function () { ChangePantColor("#7bcbc0") };
+
+            var chrSvg = char.contentDocument; // SVG Content Loded
+
+            if (gender == "male")
+                svgDoc = chrSvg.getElementById("maleSvg");
+            else if (gender == "female")
+                svgDoc = chrSvg.getElementById("femaleSvg");
+
+            svgDoc.style.visibility = "visible";
+
+            //burkha
+            var burkha = svgDoc.children["burkha"];
+            burkhaLight = burkha.children["burkhaLight"];
+            burkhaDark = burkha.children["burkhaDark"];
+
+            //face
+            var face = svgDoc.children["face"];
+
+            //hairStyle
+            var hairStyle = svgDoc.children["hairStyle"];
+            longHair = hairStyle.children["longHair"];
+            shortHair = hairStyle.children["shortHair"];
+
+            //pant
+            pant = svgDoc.children["pant"];
+
+            //shirt
+            shirt = svgDoc.children["shirt"];
+
+            //arm
+            arm = svgDoc.children["arm"];
+
+            //specs
+            specs = svgDoc.children["facialDetail"].children["specs"];
+
+            //drivingSuit
+            drivingSuit = svgDoc.children["drivingSuit"];
+            drivingLight = drivingSuit.children["drivingLight"];
+            drivingDark = drivingSuit.children["drivingDark"];
+
+            //shoes
+            shoes = svgDoc.children["shoes"];
+            shoesDark = shoes.children["shoesDark"];
+            shoesLight = shoes.children["shoesLight"];
+            var shoesBase = shoes.children["shoesBase"];
+            var shoesDetail = shoes.children["shoesDetail"];
+
+
+            // Reset the value
+            $("#coustomBtn").removeAttr("data-target");
+            hairStyle.style.fill = "#000";
+            shirt.style.fill = "#ebebeb";
+            arm.style.fill = "#ebebeb";
+            pant.style.fill = "#cdcdcd";
+            burkhaLight.style.fill = "#cdcdcd";
+            burkhaDark.style.fill = "#ebebeb";
+            longHair.style.visibility = "hidden";
+            shortHair.style.visibility = "hidden";
+        }
+
+        function ChangeShirtColor(color) {
+            drivingLight.style.fill = color;
+            shirt.style.fill = color;
+            shoesDark.style.fill = color;
+            burkhaDark.style.fill = color;
+        }
+
+        function ChangePantColor(color) {
+            burkhaLight.style.fill = color;
+            pant.style.fill = color;
+            drivingDark.style.fill = color;
+            arm.style.fill = color;
+            shoesLight.style.fill = color;
+        }
+    </script>
+</body>
+</html>
